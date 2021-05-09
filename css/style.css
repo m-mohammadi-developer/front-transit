@@ -1,10 +1,23 @@
+@import url('font-awesome.min.css');
+
+@font-face {
+    font-family: "Raleway";
+    src: url(../fonts/Raleway/Raleway-VariableFont_wght.ttf);
+}
+
+
 * {
     margin: 0;
 }
 
 body {
-    font-family: "Raleway", Helvetica, sans-serif;
+    font-family: Raleway, Helvetica, sans-serif;
     color: #444;
+}
+
+h1,
+h2 {
+    font-family: Helvetica;
 }
 
 a {
@@ -15,37 +28,104 @@ a {
 
 /******************************** header styles ********************************/
 
-.header {
-    height: 500px;
-    background-color: rgb(112, 108, 108);
-    padding: 40px 50px;
-}
-
-.top-menu h1 {
+.header h1 {
     float: left;
-    font-size: 25px;
 }
 
 .nav {
-    float: right;
+    text-align: right;
 }
 
 .nav ul li {
     display: inline;
-    padding: 10px;
+    padding: 0 15px;
 }
 
-h1 {
-    font-weight: 600;
+.nav ul li a {
+    color: rgba(255, 255, 255, 0.5);
+    transition: color .3s ease-in-out;
 }
 
-ul {
-    list-style: none;
+.nav ul li a:hover {
+    color: rgb(255, 255, 255);
 }
+
+.top-menu {
+    padding: 25px;
+    padding-top: 35px;
+}
+
+.header {
+    background-image: url(../img/dark_tint.png), url(../img/bokeh_car_lights_bg.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
 
 .btn {
-    background-color: #fff;
-    border-radius: 20px;
     padding: 10px 20px;
-    color: black;
+    border-radius: 30px;
+    border: 0;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    font-family: Raleway;
 }
+
+.btn-gray {
+    background-color: #fff;
+    color: #444 !important;
+}
+
+.btn-blue {
+    background-color: #3cadd4;
+    color: #fff !important;
+}
+
+.btn-dark {
+    background-color: #383b43;
+    color: #ffffff !important;
+}
+
+.btn-big {
+    font-size: 20px !important;
+    padding: 17px 35px;
+}
+
+/******** banner part *********/
+
+.banner-content {
+    text-align: center;
+    color: #fff;
+    padding: 70px 0 220px 0;
+}
+
+.banner-content h2 {
+    font-size: 60px;
+    line-height: 130px;
+}
+
+.banner-content p {
+    font-size: 22px;
+    margin-bottom: 40px;
+}
+
+/******** main part *********/
+
+.main {
+    background-color: #F5F5F5;
+    text-align: center;
+    padding: 80px;
+}
+
+.services-header h2 {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.services-header p {
+    font-size: 22px;
+    color: #8A8A8A;
+}
+
