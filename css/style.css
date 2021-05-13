@@ -16,7 +16,11 @@ body {
 }
 
 h1,
-h2 {
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: Helvetica;
 }
 
@@ -113,19 +117,106 @@ a {
 
 /******** main part *********/
 
-.main {
+.services {
     background-color: #F5F5F5;
-    text-align: center;
+    border-bottom: 1px solid rgba(144, 144, 144, 0.25);
+    border-top: 1px solid rgba(144, 144, 144, 0.25);
     padding: 80px;
+    text-align: center;
+}
+
+.services-header {
+    margin-bottom: 50px;
 }
 
 .services-header h2 {
     font-size: 45px;
-    margin-bottom: 10px;
+    color: #474747;
+    margin-bottom: 12px;
 }
 
 .services-header p {
     font-size: 22px;
-    color: #8A8A8A;
+    color: #858585;
+}
+
+
+.icon:before {
+    font-family: FontAwesome;
+    font-style: normal;
+}
+
+.color-blue {
+    background-color: #3cadd4;
+    color: #ffffff;
+}
+
+.color-green {
+    background-color: #add43c;
+    color: #ffffff;
+}
+
+.color-red {
+    background-color: #d43c61;
+    color: #ffffff;
+}
+
+.big {
+    font-size: 40px;
+    padding: 35px 50px;
+}
+
+.rounded {
+    border-radius: 100%;
+}
+
+.services-content>* {
+    float: left;
+}
+
+.services-content:after,
+.services-content:before {
+    content: '';
+    display: block;
+    clear: both;
+
+}
+
+
+.box {
+    background-color: #fff;
+    padding: 70px 30px;
+    border: 1px solid rgba(144, 144, 144, 0.25);
+    border-radius: 4px;
+    width: calc(calc(100% / 3) - 82px);
+    margin: 0 10px;
+}
+
+.services-content {
+    margin: 0;
+}
+
+.box h4 {
+    color: #858585;
+    font-style: 25px;
+    margin: 60px 0 30px;
+}
+
+.box p {
+    line-height: 25px;
+    ;
+}
+
+.services-content {
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 835px) {
+    .box {
+        width: 100%;
+        padding: 60px 10px;
+        margin: 10px 0;
+    }
 }
 
