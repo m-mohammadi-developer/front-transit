@@ -297,19 +297,58 @@ a {
 
 .contact {
     background-color: #3cadd4;
-    color:#fff;
+    color: #fff;
     padding: 100px 0;
 }
 
 .contact-header {
     text-align: center;
+    margin-bottom: 70px;
 }
 
-.contact-header h2{
+.contact-header h2 {
     font-size: 45px;
     margin-bottom: 10px;
 }
 
-.contact-header p{
+.contact-header p {
     font-size: 22px;
+}
+
+.contact-content {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+
+input[type="text"],
+input[type="email"] {
+    background-color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 13px 11px;
+    width: 25%; 
+
+}
+
+
+::placeholder {
+    color: #858585 !important;
+    font-size: 15px;
+    font-family: Raleway;
+}
+
+textarea {
+    background-color: #fff;
+    color:rgba(255, 255, 255, 0.5);
+    border: none;
+    border-radius: 6px;
+    padding: 15px 25px;
+    width: 50%; 
+    margin-top: 20px;
+    height: 150px;
+    text-indent: -12px;
+    margin: 30px 0;
 }
