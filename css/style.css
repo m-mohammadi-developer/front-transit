@@ -352,3 +352,25 @@ textarea {
     text-indent: -12px;
     margin: 30px 0;
 }
+
+/**************** footer *******************/
+
+.footer {
+    background-color: #383b43;
+    padding: 100px 0;
+}
+
+.copyright {
+    padding-left: 150px;
+}
+
+.copyright li {
+    list-style: none;
+    color: #858585;
+    display: inline;    
+    font-size: 15px;
+    margin: 0 10px;
+}
+.copyright li a {
+    color: #858585;
+}
